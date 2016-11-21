@@ -3,4 +3,107 @@ body
     background-attachment: fixed;
     font-family: Helvetica, Arial, sans-serif;
     overflow-x: hidden;
+    
+
+    /* -- sessão serviços -- */
+    #servicos
+        background-color: $branco
+        width: 100%
+        padding: 20px 0
+        
+        .container
+            .row
+                .col-md-6   
+                    .albuns                        
+                        
+                        .um
+                            margin: 0 15px //ajustando margin                    
+                               
+                            
+                        .dois 
+                            margin: 0 -15px //ajustando margin 
+                        
+
+                        /* -- Arrumando responsivo --*/                        
+                        +breakpoint($tablet)    
+                            .um
+                                margin: none                            
+                            
+                            .dois
+                                margin: 0 15px 
+                                padding-bottom: 24px
+                                   
+                        
+                        +breakpoint($celular)
+                            
+                            
+                            .um
+                                margin: 0 15px 
+                                
+                            .dois
+                                margin: 0 -15px                        
+                            
+                    .servicos                        
+                        
+                        /* -- Arrumando responsivo --*/ 
+                        +breakpoint($tablet)
+                            position: relative
+                            bottom: 24px                       
+                            
+                        .um
+                            margin: 0 15px                     
+                               
+                            
+                        .dois 
+                            margin: 0 -15px
+    
+                        +breakpoint($tablet)
+                            .fantasma
+                                display: none
+        
+                            .um
+                                margin: none 
+                            
+                            .dois
+                                margin: none   
+                        
+                        +breakpoint($celular)
+                            .fantasma
+                                display: block
+                            
+                            .um
+                                margin: 0 15px 
+                            
+                            .dois
+                                margin: 0 -15px   
+                
+                .texto             
+                    
+                    +breakpoint($tablet)
+                        position: relative
+                        top: 150px
+                    
+                    +breakpoint($celular)
+                        top: 0
+                        
+                        
+                    
+                    
+    
+    /* -- sessão recursos -- */     
+    #recursos
+        padding: 20px 0
+        color: $branco
+        
+        .container
+            .row
+                .col-md-4
+                .col-md-8
+                    z-index: -999
+                    .rotacionar
+                        transform: rotate(30deg)
+                        -ms-transform: rotate(30deg)
+                        -webkit-transform: rotate(30deg)
+                        -moz-transform: rotate(30deg)
+                        padding-left: 80px
                     

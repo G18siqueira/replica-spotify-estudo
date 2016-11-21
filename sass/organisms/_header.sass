@@ -1,6 +1,6 @@
 body
     /***** NAVBAR HEADER ******/
-    nav
+    nav.navbar-transparent
         padding: 15px 0
         background-color: rgba(0, 0, 0, 0.6)
         border: none
@@ -26,14 +26,20 @@ body
                 ul
                     li   
                         a
+                            +font-size(25px)
                             color: $branco
                             font-weight: 700
+                            &:hover
+                                color: #9bf0e1
+                        
+                        .cinza
+                            color: #C1C3C6
                         
                     .divisor
                         background-color: $branco
                         width: 1px
                         height: 16px
-                        margin: 17px 10px
+                        margin: 17px 10px         
                         
     /***** CAPA ******/                    
     .capa
@@ -53,6 +59,7 @@ body
                 padding: 10px 35px
                 margin: 0 15px
                 text-transform: uppercase
+                font-weight: 700
                 +border-radius(500px)
                 +transition(.4s)
                 

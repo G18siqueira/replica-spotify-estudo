@@ -1,0 +1,65 @@
+body
+    footer
+        background-color: $preto
+        padding: 70px 0 40px
+        position: relative
+        
+        .container
+            .row
+                .col-md-2
+                    .img-logo
+                        background-image: url(../images/spotify.svg)
+                        background-repeat: no-repeat
+                        background-size: contain
+                        width: 132px
+                        height: 40px
+                        display: block
+                        color: transparent
+                        margin-top: -18px
+                    
+                    ul
+                        li
+                            a
+                                color: $branco
+                                &:hover
+                                    color: #9bf0e1;
+                                    background: none
+                    
+                .col-md-4   
+                    +flexbox
+                    +justify-content(flex-end)
+                    ul
+                       
+                        
+                        a
+                            float: left
+                            background-color: #2E2F33
+                            color: $branco
+                            +border-radius(100%)
+                            width: 60px
+                            height: 60px
+                            margin-left: 15px
+                            display: table
+                            
+                            
+                            
+                            .item-redesocial
+                                +font-size(40px)
+                                display: table-cell
+                                vertical-align: middle
+                                text-align: center    
+                                position: relative
+                                right: 1px
+                                top: 1px
+                                
+                                
+                            .fa-facebook 
+                                &:hover
+                                    color: $facebook
+                            .fa-twitter
+                                &:hover
+                                    color: $twitter
+                            .fa-instagram   
+                                &:hover
+                                    color: $instagram
+        
