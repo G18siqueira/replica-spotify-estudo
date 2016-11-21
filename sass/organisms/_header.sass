@@ -1,0 +1,73 @@
+body
+    /***** NAVBAR HEADER ******/
+    nav
+        padding: 15px 0
+        background-color: rgba(0, 0, 0, 0.6)
+        border: none
+        
+        .container
+            .navbar-header
+                button
+                    span
+                a
+                    padding: 5px 15px
+                    
+                    .img-logo
+                        background-image: url(../images/spotify.svg)
+                        background-repeat: no-repeat
+                        background-size: contain
+                        width: 132px
+                        height: 40px
+                        display: block
+                        color: transparent
+                        
+            /***** NAVBAR HEADER ******/
+            .collapse
+                ul
+                    li   
+                        a
+                            color: $branco
+                            font-weight: 700
+                        
+                    .divisor
+                        background-color: $branco
+                        width: 1px
+                        height: 16px
+                        margin: 17px 10px
+                        
+    /***** CAPA ******/                    
+    .capa
+        display: table /*Para alinhamento vertical*/
+        width: 100% /*Para alinhamento vertical*/
+        
+        .texto-capa
+            display: table-cell
+            vertical-align: middle
+            color: $branco
+            text-align: center
+        
+            h1      
+            
+            .btn-custom
+                color: $branco
+                padding: 10px 35px
+                margin: 0 15px
+                text-transform: uppercase
+                +border-radius(500px)
+                +transition(.4s)
+                
+            .btn-branco
+                border: 2px solid $branco
+                &:hover
+                    background-color: $branco
+                    color: $preto
+                
+            .btn-roxo
+                background-color: #7c25f8    
+                &:hover
+                    background-color: #6207e3;
+                    color: #fff;
+                
+                
+                
+    
